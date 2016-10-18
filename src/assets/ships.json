@@ -1,0 +1,22 @@
+[{
+    "name" : "Constitution",
+    "FTL": "Wrap Drive",
+    "weapons" : ["Phasers", "Proton Torpedoes"],
+    "fighters": false,
+    "universe": "Star Trek"
+  },
+  {
+    "name" : "Star Destroyer",
+    "FTL": "Hyper Drive",
+    "weapons" : ["Laser Cannons", "Ion Cannons"],
+    "fighters": "Fighter 1",
+    "universe": "Star Wars"
+  },
+  {
+    "name" : "Battlestar",
+    "FTL": "Jump Drive",
+    "weapons" : ["Flak Cannons", "Nuclear Missiles"],
+    "fighters": "Fighter 2",
+    "universe": "Universe 2"
+  }
+  ]

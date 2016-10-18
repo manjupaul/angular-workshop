@@ -1,0 +1,22 @@
+<p>
+  ship-list works!
+</p>
+
+<!--<div *ngFor="let ship of ships" style="margin-top: 10px">
+   <app-ship-card [ship]="ship"></app-ship-card>
+</div>-->
+
+<app-ship-card 
+*ngFor="let ship of ships" 
+[ship]="ship"
+(selectShip)="logSelectedShip($event)"></app-ship-card> 
+
+<!--<app-ship-card 
+*ngFor="let ship of ships" 
+[ship]="ship" <!-- input of ship card (selectShip)="logSelectedShip($event)">
+</app-ship-card>  selectShip is emitted by ship card (output)-->
+<!-- $event is the event that is emitted by the EventEmitter, in our example event emitter emits ship and hence logSelectedShip expects the IShip -->
+
+
+
+

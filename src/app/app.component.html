@@ -1,3 +1,19 @@
-<h1>
+<header style="margin-top: 5px;">
+  <nav>
+    <div class="nav-wrapper">
+      <ul>
+        <li routerLinkActive="green-background"> <!-- if a link is active then add the css class to it in angular 1 it would be router-ink-active-->
+          <a [routerLink]="['/home']">Home</a></li> <!-- in angular 1 it would be router-link -->
+        <li routerLinkActive="green-background">
+          <a [routerLink]="['/welcome']">Hello</a></li> <!-- in angular2 we do not do -->
+      </ul>
+    </div>
+  </nav>
+  <hr>
+</header>
+<router-outlet></router-outlet>
+<footer>
+  <h1>
   {{title}}
 </h1>
+</footer>

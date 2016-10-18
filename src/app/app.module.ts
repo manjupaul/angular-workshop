@@ -14,9 +14,9 @@ import { ShipCardComponent } from './ship-card/ship-card.component';
 import { StarshipService } from './starship.service' // import here to add to the providers list
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' }, // since all routes have empty space , so we say pathMatch: full to say only empty string
+  { path: '', redirectTo: 'welcome/jack', pathMatch: 'full' }, // since all routes have empty space , so we say pathMatch: full to say only empty string
   { path: 'home', component: HomeComponent },
-  { path: 'welcome', component: WelcomeComponent }
+  { path: 'welcome/:who', component: WelcomeComponent } //  redirectTo: 'welcome/jack' -> specifying default value for the parameter
 ];
 
 @NgModule({

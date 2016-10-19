@@ -5,7 +5,7 @@
 <!--<div *ngFor="let ship of ships" style="margin-top: 10px">
    <app-ship-card [ship]="ship"></app-ship-card>
 </div>-->
-
+The length: {{(ships | async)?.length}}
 <app-ship-card 
 *ngFor="let ship of ships | async" 
 [ship]="ship"

@@ -7,7 +7,7 @@
 </div>-->
 
 <app-ship-card 
-*ngFor="let ship of ships" 
+*ngFor="let ship of ships | async" 
 [ship]="ship"
 (selectShip)="logSelectedShip($event)"></app-ship-card> 
 
